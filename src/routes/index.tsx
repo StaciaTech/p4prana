@@ -356,13 +356,14 @@ function LifeCourseChart({ reducedMotion }: { reducedMotion: boolean }) {
   const acsStart = 57.5;
   const acsEnd = 72; // ~15 years
 
+  const ease: [number, number, number, number] = [0.37, 0, 0.63, 1];
   const anim = reducedMotion
-    ? { initial: false, animate: { pathLength: 1, opacity: 1 } }
+    ? { initial: false as const, animate: { pathLength: 1, opacity: 1 } }
     : {
         initial: { pathLength: 0, opacity: 0 },
         whileInView: { pathLength: 1, opacity: 1 },
         viewport: { once: true, amount: 0.4 },
-        transition: { duration: 1.4, ease: [0.37, 0, 0.63, 1] },
+        transition: { duration: 1.4, ease },
       };
 
   const ageTicks = [0, 10, 20, 30, 40, 50, 57.5, 60, 70, 72];
