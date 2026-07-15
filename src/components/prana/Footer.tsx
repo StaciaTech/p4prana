@@ -1,6 +1,6 @@
 import { cn } from "@/lib/utils";
 import { PranaWave } from "./PranaWave";
-import pranaLogo from "@/assets/prana-logo.svg.asset.json";
+import pranaLogo from "@/assets/prana-logo.svg";
 
 interface FooterProps {
   className?: string;
@@ -21,7 +21,7 @@ export function Footer({ className, partners }: FooterProps) {
         <div className="grid gap-10 md:grid-cols-4">
           <div className="md:col-span-2">
             <div className="flex items-center gap-3">
-              <img src={pranaLogo.url} alt="" className="h-10 w-10" aria-hidden />
+              <img src={pranaLogo} alt="" className="h-10 w-10" aria-hidden />
               <span className="font-display text-lg font-bold uppercase tracking-tight">
                 PRANA <span className="text-gradient">2026</span>
               </span>

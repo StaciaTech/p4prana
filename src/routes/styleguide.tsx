@@ -14,7 +14,7 @@ import { SectionDivider } from "@/components/prana/SectionDivider";
 import { GroupChip } from "@/components/prana/GroupChip";
 import { Nav } from "@/components/prana/Nav";
 import { Footer } from "@/components/prana/Footer";
-import pranaLogo from "@/assets/prana-logo.svg.asset.json";
+import pranaLogo from "@/assets/prana-logo.svg";
 
 export const Route = createFileRoute("/styleguide")({
   head: () => ({
@@ -178,7 +178,7 @@ function Styleguide() {
             <div className="rounded-lg border border-line bg-card p-8">
               <p className="eyebrow">PRANA lockup</p>
               <div className="mt-6 flex items-center gap-4">
-                <img src={pranaLogo.url} alt="" className="h-20 w-20" />
+                <img src={pranaLogo} alt="" className="h-20 w-20" />
                 <span className="font-display text-4xl font-bold uppercase leading-none">
                   PRANA <span className="text-gradient">2026</span>
                 </span>
