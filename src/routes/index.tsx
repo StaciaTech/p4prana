@@ -10,7 +10,7 @@ import { PranaRing } from "@/components/prana/PranaRing";
 import { PranaWave } from "@/components/prana/PranaWave";
 import { SplitHeading } from "@/components/prana/SplitHeading";
 import { SectionDivider } from "@/components/prana/SectionDivider";
-import { SpeakerCard } from "@/components/prana/SpeakerCard";
+
 import { StatBlock } from "@/components/prana/StatBlock";
 import { cn } from "@/lib/utils";
 
