@@ -537,7 +537,7 @@ function LifeCourseChart({ reducedMotion }: { reducedMotion: boolean }) {
           transition={
             reducedMotion
               ? undefined
-              : { duration: 1.0, ease: [0.37, 0, 0.63, 1], delay: 0.3 }
+              : { duration: 1.0, ease, delay: 0.3 }
           }
         />
         <circle
