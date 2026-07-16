@@ -1,7 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { cn } from "@/lib/utils";
 import { Button } from "./Button";
-import pranaLogo from "@/assets/prana-logo.svg.asset.json";
+import pranaLogo from "@/assets/prana-logo.svg";
 
 interface NavItem {
   label: string;
@@ -36,7 +36,7 @@ export function Nav({ items = DEFAULT_ITEMS, className }: NavProps) {
           className="flex items-center gap-3 min-h-11"
           aria-label="PRANA 2026 home"
         >
-          <img src={pranaLogo.url} alt="" className="h-8 w-8" aria-hidden />
+          <img src={pranaLogo} alt="" className="h-8 w-8" aria-hidden />
           <span className="font-display text-[15px] font-bold uppercase tracking-tight text-ink dark:text-paper">
             PRANA <span className="text-gradient">2026</span>
           </span>
